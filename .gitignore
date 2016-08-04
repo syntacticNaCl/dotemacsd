@@ -3,3 +3,22 @@
 
 # Packaging
 .cask
+
+# Emacs
+auto-save-list
+backups
+bookmarks
+elpa
+eshell
+plugins
+themes
+var
+ac-comphist.dat
+ido.last
+places
+#*
+*~
+projectile-bookmarks.eld
+places
+smex-items
+network-security.data

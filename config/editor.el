@@ -1,0 +1,61 @@
+;; Editor settings
+
+;; In every buffer, the line which contains the cursor will be fully highlighted
+(global-hl-line-mode 1)
+
+;; Prevent backup files
+(setq make-backup-files nil) 
+
+;; Place auto-saves in the system temp directory
+(setq auto-save-file-name-transforms
+          `((".*" ,temporary-file-directory t)))
+
+;; Show line-number in the mode line
+(line-number-mode 1)
+
+;; Show column-number in the mode line
+(column-number-mode 1)
+
+(load-theme 'seti t)
+(set-cursor-color "green")
+
+;; Add line nums
+(global-linum-mode t)
+
+;; Override from yes-or-no to y-or-n
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+;; Highlight Indentation
+(require 'highlight-indentation)
+
+;; TabsAreEvil
+;; (setq-default indent-tabs-mode nil)
+;; (setq-default tab-width 4)
+
+;; smex {{
+(require 'smex)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+;; }}
+
+;; expand-region {{
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
+;; }} 
+;; volitle-highlights {{
+(require 'volatile-highlights)
+(volatile-highlights-mode t)
+;; }} 
+
+;; powerline{{
+(require 'powerline)
+(powerline-default-theme)
+;; }}
+
+;; undo tree {{
+(global-undo-tree-mode)
+;; }}
+
+(provide 'editor)
