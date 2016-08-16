@@ -20,6 +20,7 @@
 	 git-gutter
 	 highlight-indentation
 	 ido-ubiquitous
+	 js2-mode
 	 key-chord
 	 magit
 	 neotree
