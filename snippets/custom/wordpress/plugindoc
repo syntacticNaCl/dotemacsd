@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: plugindoc
+# key: wpplugindoc
+# --
+/**
+ * Plugin Name: $1
+ * Description: $2
+ * Author: $3
+ * Author URI: $4
+ * Version: $0 
+ */

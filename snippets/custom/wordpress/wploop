@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: wploop
+# key: wploop
+# --
+if ( $1->have_posts() ) {
+	while ( $1->have_posts() ) {
+		$1->the_post();
+		$0
+	}
+} else {
+	
+}
+
+wp_reset_postdata();

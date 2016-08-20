@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: gravityform
+# key: wpgf
+# --
+gravity_form( $1, $display_title = false, $display_description = false, $display_inactive = false, $field_values = null, $ajax = false, $tabindex, $echo = true );

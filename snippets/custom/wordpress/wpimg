@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: wpimg
+# key: wpimg
+# --
+wp_get_attachment_image_src( $1, $2, $0 ); 
