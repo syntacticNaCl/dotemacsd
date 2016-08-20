@@ -2,6 +2,7 @@
   '(
 	 ac-html
 	 ac-emmet
+         ample-theme
 	 better-defaults
 	 company
 	 company-c-headers

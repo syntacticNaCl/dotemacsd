@@ -16,13 +16,18 @@
 ;; Show column-number in the mode line
 (column-number-mode 1)
 
+;; themes
+(load-theme 'ample t t)
+(load-theme 'ample-flat t t)
+(load-theme 'ample-light t t)
 (load-theme 'seti t)
+(enable-theme 'ample-flat)
 (set-cursor-color "green")
 
 ;; Add line nums
 (global-linum-mode t)
 
-;; Override from yes-or-no to y-or-n
+;; Override from yes-or-no to y-or-n
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; Highlight Indentation

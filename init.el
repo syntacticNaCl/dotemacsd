@@ -1,16 +1,18 @@
 ;; requires package.el
 (require 'package)
+(package-initialize)
+
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives
+             '("org" . "http://orgmode.org/elpa/") t)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
+
 ;; requires common lisp
 (require 'cl)
-(when (>= emacs-major-version 24)
-  (require 'package)
-  (add-to-list
-	'package-archives
-	'(("melpa" . "http://melpa.org/packages/")
-	  ("org" . "http://orgmode.org/elpa/")
-	  ("marmalade" . "http://marmalade-repo.org/packages/")))
-  (package-initialize))
-
+	
 
 (add-to-list 'load-path  "~/.emacs.d/config/")
 (add-to-list 'load-path "~/.emacs.d/custom-packages/helm/")
