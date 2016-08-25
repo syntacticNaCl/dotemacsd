@@ -31,3 +31,4 @@
 (require 'yas-config)
 (require 'helm-conf)
 (require 'js2-config)
+(require 'acejump-config)

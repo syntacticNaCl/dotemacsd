@@ -21,4 +21,17 @@
 (require 'company-web-html)                          ; load company mode html backend
 ;; }}
 
+;; php-mode {{
+(require 'php-mode)
+;; }}
+
+;; smartparens {{
+(require 'smartparens-config)
+(add-hook 'js-mode-hook 'smartparens-mode)
+(add-hook 'php-mode-hook 'smartparens-mode)
+(add-hook 'company-mode-hook 'smartparens-mode)
+;; }}
+
+
+
 (provide 'web-config)

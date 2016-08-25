@@ -1,13 +1,16 @@
 (defvar prelude-packages
   '(
+	 ace-jump-mode
 	 ac-html
 	 ac-emmet
-         ample-theme
+	 ample-theme
 	 better-defaults
 	 company
 	 company-c-headers
+	 company-php
 	 company-shell
 	 company-web
+	 composer
 	 emmet-mode
 	 evil
 	 evil-leader
@@ -26,13 +29,16 @@
 	 magit
 	 neotree
 	 paredit
+	 php-mode
 	 powerline
 	 powerline-evil
 	 projectile
 	 rainbow-delimiters
+	 restclient
 	 seti-theme
 	 smart-mode-line
 	 smart-mode-line-powerline-theme
+	 smartparens
 	 smex
 	 undo-tree
 	 visual-regexp-steroids
