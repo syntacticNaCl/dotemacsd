@@ -20,9 +20,14 @@
 (load-theme 'ample t t)
 (load-theme 'ample-flat t t)
 (load-theme 'ample-light t t)
-(load-theme 'seti t)
-(enable-theme 'ample-flat)
+;(load-theme 'seti t)
+(enable-theme 'ample-light)
+
+;; colors {{
 (set-cursor-color "green")
+(set-face-attribute 'region nil :background "#222")
+
+;; }}
 
 ;; Add line nums
 (global-linum-mode t)

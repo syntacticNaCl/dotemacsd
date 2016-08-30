@@ -25,6 +25,7 @@
 	 highlight-indentation
 	 ido-ubiquitous
 	 js2-mode
+	 json-mode
 	 key-chord
 	 magit
 	 neotree
