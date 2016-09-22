@@ -45,6 +45,7 @@
 	 visual-regexp-steroids
 	 volatile-highlights
 	 web-mode
+	 yaml-mode
 	 yasnippet
 	 )
   "A list of packages to ensure are installed at launch.")
