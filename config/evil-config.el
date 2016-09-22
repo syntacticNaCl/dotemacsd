@@ -45,5 +45,24 @@
 (require 'evil-matchit)
 (global-evil-matchit-mode 1)
 
+;; Overload shifts so that they don't lose the selection
+;; Props to https://github.com/djoyner. This was driving me insane!
+(define-key evil-visual-state-map (kbd ">") 'custom-evil-shift-right-visual)
+(define-key evil-visual-state-map (kbd "<") 'custom-evil-shift-left-visual)
+(define-key evil-visual-state-map [tab] 'custom-evil-shift-right-visual)
+(define-key evil-visual-state-map [S-tab] 'custom-evil-shift-left-visual)
+
+(defun custom-evil-shift-left-visual ()
+  (interactive)
+  (evil-shift-left (region-beginning) (region-end))
+  (evil-normal-state)
+  (evil-visual-restore))
+
+(defun custom-evil-shift-right-visual ()
+  (interactive)
+  (evil-shift-right (region-beginning) (region-end))
+  (evil-normal-state)
+  (evil-visual-restore))
+
 ;; end evil-config
 (provide 'evil-config)
