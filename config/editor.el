@@ -17,11 +17,11 @@
 (column-number-mode 1)
 
 ;; themes
-(load-theme 'ample t t)
-(load-theme 'ample-flat t t)
-(load-theme 'ample-light t t)
-;(load-theme 'seti t)
-(enable-theme 'ample-light)
+;(load-theme 'ample t t)
+;(load-theme 'ample-flat t t)
+;(load-theme 'ample-light t t)
+(load-theme 'seti t)
+;(enable-theme 'ample-flat)
 
 ;; colors {{
 (set-cursor-color "green")
@@ -32,7 +32,13 @@
 ;; Add line nums
 (global-linum-mode t)
 
-;; Override from yes-or-no to y-or-n
+;; Auto save active buffer
+(add-hook 'focus-out-hook 'save-buffer)
+
+;; Auto save all open buffers
+;; (add-hook 'focus-out-hook (lambda () (save-some-buffers t)))
+
+;; Override from yes-or-no to y-or-n
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; Highlight Indentation
