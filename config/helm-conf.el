@@ -1,8 +1,5 @@
 (require 'helm-config)
 
-;; allow for tab completion in helm buffer
-(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
-
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x m") 'helm-M-x)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
