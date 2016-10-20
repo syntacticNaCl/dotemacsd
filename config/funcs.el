@@ -3,4 +3,11 @@
 	  (interactive)
 	    (switch-to-buffer (other-buffer (current-buffer) 1)))
 
+(defun kill-other-buffers ()
+    "Kill all other buffers."
+    (interactive)
+    (mapc 'kill-buffer 
+          (delq (current-buffer) 
+                (remove-if-not 'buffer-file-name (buffer-list)))))
+
 (provide 'funcs)

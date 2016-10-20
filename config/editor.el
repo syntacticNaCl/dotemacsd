@@ -20,7 +20,8 @@
 ;(load-theme 'ample t t)
 ;(load-theme 'ample-flat t t)
 ;(load-theme 'ample-light t t)
-(load-theme 'seti t)
+;; (load-theme 'seti t)
+(load-theme 'zenburn t)
 ;(enable-theme 'ample-flat)
 
 ;; colors {{

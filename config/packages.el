@@ -36,6 +36,7 @@
 	 projectile
 	 rainbow-delimiters
 	 restclient
+         sass-mode
 	 seti-theme
 	 smart-mode-line
 	 smart-mode-line-powerline-theme
@@ -47,6 +48,7 @@
 	 web-mode
 	 yaml-mode
 	 yasnippet
+         zenburn-theme
 	 )
   "A list of packages to ensure are installed at launch.")
 
